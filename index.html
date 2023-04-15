@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agrim Ji's Website</title>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=gXgLSWb3Cy3BwoBUWdTToKyMjQFpWKzmvbyzPP7IL6ZkAZIDWK_yoxKwhc3ZVFv18tlG8MseTrUbuOa_bV1d6vkxrE7X-DRycUhpYWInXc7y6pHXB9j7dCWHc5kPgBtS" charset="UTF-8"></script></head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: larger;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    h1 {
+      margin: 0;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin-right: 20px;
+    }
+    nav li:last-child {
+      margin-right: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    img {
+  display: block;
+  margin: 0 auto;
+  max-width: 25%;
+  height: 25%;
+}
+  </style>
+  <body>
+    <script>
+      function searchFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("search");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("contacts");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              td = tr[i].getElementsByTagName("td")[1];
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <header>
+      <h1>Welcome to Agrim's Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Home</h2>
+        <p></p>
+        <img src="agrimji.jpg" alt="Agrim Ji">
+        <img src="agrim.jpg" alt="Agrim">
+        <img src="agrimjee.jpg" alt="Agrimjee">
+
+      </section>
+      <section id="about">
+        <h2>About Agrim </h2>
+        <p>Hi I am Agrim. I live in Kathmandu. I am eleven years old. I live in Rajbiraj Saptari. My hobby is to watch spiritual movies and listen holy speeches.I wish to gain perfection in mohani mantra. This website has been <u> Prepared by: </u>Shiva Prasad Acharya on my humble request.</p>
+				<p><b> Chant & be happy:</b><br>  हरम् हरिम् हरिश्चन्द्रम् हनुमन्तम् हलायुधम् <br> पञ्चकम् वै स्मरन् नित्यम् घोरसङ्कटनाशनम्।।</p>
+ 
+      </section>
+      <section id="services">
+        <h2>Contact me</h2>
+        <input type="text" id="search" onkeyup="searchFunction()" placeholder="Search for names or numbers..">
+  <table>
+    <thead>
+      <tr>
+      
+        <th>Name</th>
+        <th>Contact No.</th>
+    
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Father<br>Bipin Pokharel</td>
+       <td><a href="tel:+9779841484173 ">9841484173 <br><button class="btn" onclick="call('+9779841484173 ')">Call</button></a></td>
+      </tr>
+			<tr>
+				<td>Father<br>Baidyanath Prasad Pokharel</td>
+		 <td><a href="tel:+97798511018054">98511018054<br><button class="btn" onclick="call('+97798511018054')">Call</button></a></td>
+		</tr>
+      <tr>
+          <td>Mother <br>Kirti Pokharel<br></td>
+       
+        <td><a href="tel:+9779841733602">9841733602<br><button class="btn" onclick="call('+9779841733602')">Call</button></a></td>
+
+      </section>
+   
+  
+    </main>
+	
+		
+  </body>
+
+</html>
+<!--website of agrim bro-->
